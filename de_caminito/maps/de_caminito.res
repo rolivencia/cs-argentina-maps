@@ -1,6 +1,6 @@
 //////Wads
-cstrike\cs_caminito.wad
-cstrike\itsitaly.wad
+cs_caminito.wad
+itsitaly.wad
 
 //////Skies
 gfx/env/phup.tga
