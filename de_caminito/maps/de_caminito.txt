@@ -1,0 +1,62 @@
+Buenos Aires, 20 de septiembre de 2001.
+
+------------------------------------------------------------------------------------------------------------------                                         
+                                       Mapa de bomba para Counter-Strike.
+                                                  
+                                                   de_caminito 
+------------------------------------------------------------------------------------------------------------------                                       
+Titulo                  : de_caminito
+lanzamiento            	: 20 septiembre 2001
+nombre fichero          : de_caminito.bsp
+Version                 : 1.0
+Author                  : e-lian
+Email                   : seba_js@yahoo.com
+Descripcion             : Mapa de bomba para Counter-Strike basado en la calle 
+			  Caminito del Barrio de la Boca en Buenos Aires.
+
+
+--- Tiempo de desarrollo 2 meses aprox.
+--- compilado con el ZHLT (Zoners Half-Life Tools)
+--- Modulo CSG 18 seg
+--- Modulo BSP 14 seg
+--- Modulo VIS 63 h 52 m 48 seg
+--- Modulo RAD 12 m 4 seg
+--- Compilado con un Athlon 900 mhz, 384 RAM.
+------------------------------------------------------------------------------------------------------------------
+
+Texturas:
+	halflife.wad, decals.wad, itsitaly.wad, cs_caminito.wad (creado integramente para este mapa).
+
+Créditos:
+	Idea: Tatua, MasterChot, e-lian.
+	Mapeado: e-lian
+	Texturas: Tatua, e-lian.
+	Sonido: Control+z
+	BOTs: e-lian (PODBot v2.5)
+	
+
+Agradecimientos:
+	Primero a Ceci por bancar al lado mio las largas horas de creación de este mapa.
+	A Trini (mi vieja) por controlar y transmitirme por teléfono el estado de la compilación.
+	A Cyberia-Games y su staff por la paciencia y los animos.
+	A los sponsors por confiar en este proyecto, especialmente a XtremePC por publicarlo.
+	A los pibes, que probaron el mapa en el local (No los nombro porque estaban todos).
+	A Ale y Juaco que lo probaron en sus casas.
+	A Kusanagi por 'dejarme' robar el formato de esta info (espero que no se enoje, y los Alkon tampoco).
+	A todos ustedes, que aprueben o no el mapa, lo tienen en su PC.
+
+							Sebastian Silva (e-lian)
+
+
+
+
+                                              INSTALACION:
+------------------------------------------------------------------------------------------------------------------
+BSP y TXT a la carpeta C:/sierra/half-life/cstrike/maps
+WAD a la carpeta C:/sierra/half-life/cstrike
+TGA a la carpeta C:/Sierra/half-life/cstrike/gfx/env
+la carpeta PODot a la cerpeta C:/Sierra/half-life/cstrike
+la carpeta sound/de_caminito a la cerpeta C:/Sierra/half-life/cstrike
+o descomprimir el contenido en: C:/sierra/half-life
+------------------------------------------------------------------------------------------------------------------
+                      
