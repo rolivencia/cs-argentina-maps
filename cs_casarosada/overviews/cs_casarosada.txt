@@ -1,0 +1,14 @@
+// overview description file for cs_casarosada.bsp
+
+global 
+{
+	ZOOM	1.89
+	ORIGIN	32 	-144	-437
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/cs_casarosada.bmp"
+	HEIGHT	-437
+}

@@ -5,3 +5,9 @@ Una colección de mapas basados en Argentina y relacionados con Argentina incluy
 
 ## English
 A collection of argentinian-based and argentinian-related maps including Counter-Strike 1.6, Counter-Strike Source, Counter-Strike Global Offensive and Counter-Strike 2 maps.
+
+---
+
+## Counter-Strike 1.x + CS:CZ
+- `cs_casarosada`
+- `de_caminito`
