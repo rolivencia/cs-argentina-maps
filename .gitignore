@@ -3,3 +3,5 @@
 
 # Retrieval toolkit working data (large, third-party)
 tools/cs-maps/data/
+__pycache__/
+*.pyc
