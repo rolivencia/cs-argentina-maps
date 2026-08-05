@@ -11,3 +11,12 @@ A collection of argentinian-based and argentinian-related maps including Counter
 ## Counter-Strike 1.x + CS:CZ
 - `cs_casarosada`
 - `de_caminito`
+
+---
+
+## Archival / Archivística
+
+- [`docs/cs-maps-co-uk-retrieval-plan.md`](docs/cs-maps-co-uk-retrieval-plan.md) —
+  plan for recovering cs-maps.co.uk (2000–2007), the British Counter-Strike map
+  archive, from the Wayback Machine and contemporary mirrors.
+- [`tools/cs-maps/`](tools/cs-maps/) — the toolkit that carries it out.
