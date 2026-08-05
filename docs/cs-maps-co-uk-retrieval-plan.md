@@ -139,8 +139,8 @@ Secondary sources, in rough order of usefulness:
 
 | Source | Notes |
 |---|---|
-| [`cs-1.6-mega-map-pack-v-2018.1.7z`](https://archive.org/details/cs-1.6-mega-map-pack-v-2018.1.7z) | 3.2 GB aggregate pack; no listing published, must be downloaded to index |
-| [`hl-counter-strike`](https://archive.org/details/hl-counter-strike) | 4.0 GB Half-Life/CS collection |
+| [`cs-1.6-mega-map-pack-v-2018.1.7z`](https://archive.org/details/cs-1.6-mega-map-pack-v-2018.1.7z) | **1,745 maps**, the largest single lead. Stored as one solid `.7z`, so it cannot be searched remotely — the Internet Archive's in-archive viewer returns only a partial index and will not extract the `Map List.txt` manifest sitting inside it. Downloading all 3.2 GB is the only way to search it |
+| [`hl-counter-strike`](https://archive.org/details/hl-counter-strike) | 4.0 GB, 418 paths, curated **by mapper name** with screenshots and source files. Fully enumerated through the metadata API, so `findmap.sh` searches it directly |
 | [`half-life-won-1110-and-hl-1-mods-collection`](https://archive.org/details/half-life-won-1110-and-hl-1-mods-collection) | WON-era, right period |
 | [17buddies.rocks](https://www.17buddies.rocks/) | Deepest curated CS 1.6 map database, per-map pages. Blocks scripted access — browser only |
 | [GameBanana](https://gamebanana.com/games/100) | Open search API, used by `findmap.sh` |
@@ -181,16 +181,41 @@ cd tools/cs-maps
 ./findmap.sh little
 ```
 
-### On `fy_little` / `fy_little2k`
+### On `fy_little` / `cs_little` / `*_little2k`
 
-I checked every source reachable from here and found no trace:
+I checked every source reachable from here, under both prefixes, and found no
+trace of any of them:
 
-- Not on the 2001 CD-ROM — and that disc contains **zero** `fy_` maps of any
-  kind, which fits: the fight-yard genre took off with `fy_iceworld` around
-  2002, after the disc was pressed.
-- Not in csdownload.net's 107-map `fy_` list, not in GameBanana's search API
-  (zero records for both `fy_little` and `little2k`), not in web search.
-- The only `little` on the CD-ROM is `de_little-city`, a different map.
+| Source | `fy_little` | `cs_little` |
+|---|---|---|
+| 2001 CD-ROM, both discs (1,155 maps) | no | no |
+| `hl-counter-strike` (418 paths, by mapper) | no | no |
+| GameBanana search API | 0 records | 0 records |
+| csdownload.net `fy_` list (107 maps) | no | n/a |
+| Web search | no | no |
+| `cs-1.6-mega-map-pack` (1,745 maps) | **undetermined** — cannot be searched remotely | **undetermined** |
+
+Two details make the `cs_little` negative stronger than a plain "not found".
+The disc's `cs_l*` run is dense and continuous — `cs_lab`, `cs_labor_beta1`,
+`cs_laboratorium`, `cs_labs`, `cs_labyrinth`, `cs_lager`, `cs_lambda_cruser`,
+`cs_lan`, `cs_lasab`, `cs_lastfight`, `cs_lastman_beta3`, `cs_lawfirm`,
+`cs_lazy`, `cs_legend`, `cs_library`, `cs_lifts`, `cs_lighthouse`, `cs_LNL1`,
+`cs_lnl2`, `cs_lnl4`, `cs_longrun` — and nothing sits between `cs_lifts` and
+`cs_lnl2`, which is exactly where `cs_little` would sort. So the map was not in
+circulation on the shovelware channel as of 2001.
+
+For `fy_`, the same disc contains **zero** `fy_` maps of any kind, which fits
+the timeline: the fight-yard genre took off with `fy_iceworld` around 2002,
+after the disc was pressed. A `fy_` map therefore cannot predate 2002, which
+puts it in the *thin* part of the Wayback record.
+
+The only `little` found anywhere is `de_little-city` on disc B — a different
+map.
+
+The one source that could still hold it and that I could not check is the
+1,745-map mega pack, because a solid `.7z` cannot be indexed over HTTP. If the
+CDX search below comes up empty, downloading that 3.2 GB and grepping its
+`Map List.txt` is the next concrete step.
 
 None of that is evidence of absence — it is evidence that the modern mirrors
 never picked it up, which is the normal fate of a map uploaded once to one site.
@@ -207,6 +232,7 @@ And the 2007 layout used flat `imaps/cs/` and `imaps/de/` directories — so an
 cd tools/cs-maps
 ./findmap.sh little
 ./findmap.sh fy_
+./findmap.sh cs_l
 
 # and the direct prefix probe, all years, no date filter:
 curl -sS 'https://web.archive.org/cdx/search/cdx?url=cs-maps.co.uk/imaps/fy/*&matchType=prefix&fl=timestamp,original,mimetype,statuscode'
